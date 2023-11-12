@@ -121,5 +121,5 @@ search.addEventListener("keypress", (e) => {
   }
 });
 
-// Default search on city of Sibiu from Romania
+// Default search on application load
 getWeather();
