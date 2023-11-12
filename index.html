@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <input
+        type="text"
+        id="search"
+        placeholder="Input location and press Enter"
+      />
+      <div id="weather">
+        <div id="header">
+          <div>
+            <div id="main"></div>
+            <span id="country"></span>
+            <span id="region"></span>
+          </div>
+          <div>
+            <img
+              height="50px"
+              src="http://openweathermap.org/img/w/04d.png"
+              alt="forecast icon"
+              id="icon"
+            />
+          </div>
+          <button class="unit" id="unit-change">&#x2103;</button>
+        </div>
+        <div id="temp-details">
+          <div id="main-temp">
+            <span id="temp" class="temperature"></span>
+            <span class="unit">&#x2103;</span>
+          </div>
+          <div id="other-temp">
+            <div>
+              <label for="feel">Feels like:</label>
+              <span id="feel" class="temperature"></span>
+              <span class="unit">&#x2103;</span>
+            </div>
+            <div>
+              <label for="high">High:</label>
+              <span id="high" class="temperature"></span>
+              <span class="unit">&#x2103;</span>
+            </div>
+            <div>
+              <label for="low">Low:</label>
+              <span id="low" class="temperature"></span>
+              <span class="unit">&#x2103;</span>
+            </div>
+          </div>
+        </div>
+        <div id="other-details">
+          <div id="left">
+            <div>
+              <img src="./media/weather-windy.png" alt="wind icon" />
+              <label for="wind">Wind speed</label>
+              <span id="wind"></span>
+            </div>
+            <div>
+              <img src="./media/water-percent.png" alt="humidity icon" />
+              <label for="humidity">Humidity</label>
+              <span id="humidity"></span>
+            </div>
+          </div>
+          <div id="right">
+            <div>
+              <img src="./media/weather-sunset-up.png" alt="sunrise icon" />
+              <label for="up">Sunrise</label>
+              <span id="up"></span>
+            </div>
+            <div>
+              <img src="./media/weather-sunset-down.png" alt="sunset icon" />
+              <label for="down">Sunset</label>
+              <span id="down"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
